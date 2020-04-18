@@ -2,7 +2,6 @@
 
 This document serves as a checklist of what we must go through when offboarding a member of the working group.
 
-
 ### Offboarding issue checklist
 
 (Remove items if not applicable)

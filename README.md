@@ -149,7 +149,6 @@ in-kind contributions for required resources. The Build Working Group
 collaborates with the following companies who contribute various kinds of
 cloud and physical hardware to the Node.js project.
 
-
 ### Tier-1 Providers
 
 The Node.js Foundation's tier-1 infrastructure providers contribute the largest
@@ -167,7 +166,6 @@ test coverage that it does today.
   resources used to power much of the Node.js project's CI system, including
   key Windows compilation servers, along with additional services such as
   [Mailgun][5] for some [nodejs.org and iojs.org email][6] services.
-
 
 ### Tier-2 Providers
 
@@ -261,7 +259,6 @@ companies that have donated miscellaneous hardware:
 - Michael Dawson [@mhdawson](https://github.com/mhdawson) for a Raspberry Pi 1 B+
 - Chris Lea [@chrislea](https://github.com/chrislea) for a Raspberry Pi 1 B+
 
-
 If you would like to donate hardware to the Node.js Foundation, please
 reach out to the Build Working Group, via IRC (details at the top of this page)
 or contact [Rod Vagg](mailto:rod@vagg.org) directly. The Build Working Group
@@ -270,7 +267,6 @@ donating hardware does not guarantee its use within the testing infrastructure
 as there are many other factors that must be considered. Some donated hardware,
 while not used actively in the CI infrastructure, is used from time to time for
 R&D purposes by the project.
-
 
 ## CI Software
 
@@ -284,7 +280,6 @@ Build and test orchestration is performed by [Jenkins][21].
 The Build WG will keep build configuration required for a release line for 6
 months after the release goes End-of-Life, in case further build or test runs
 are required. After that the configuration will be removed.
-
 
 [1]:    irc://irc.freenode.net/node-build
 [2]:    https://digitalocean.com/

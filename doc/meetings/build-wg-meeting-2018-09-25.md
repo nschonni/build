@@ -48,5 +48,3 @@ No announcements
 * **Node.js Foundation Calendar**: https://nodejs.org/calendar
 
 Click `+GoogleCalendar` at the bottom right to add to your own Google calendar.
-
-

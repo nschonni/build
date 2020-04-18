@@ -20,7 +20,6 @@ The WG has final authority over this project and associated teams including:
 For the current list of WG members, see the project
 [README.md](./README.md#build-wg-members).
 
-
 ### WG Membership
 
 WG seats are not time-limited.  There is no fixed size of the WG.
@@ -102,7 +101,6 @@ members should:
    situation. For example: we are dealing with donated resources and we often
    have to perform careful balancing-acts to foster these relationships.
 
-
 Onboarding of new members is provided once they join, see the
 [the onboarding doc][] for more details.
 
@@ -157,11 +155,9 @@ These Pull Requests must be:
   * Get at least one approval from another WG member
   * Use the squash merge button workflow on Github
 
-
 [IRC], specifically `#node-build` is important for communicating with
 other Node.js project members, and how we receive many initial signals
 of downtime. IRC logs are maintained at http://logs.libuv.org/node-build
-
 
 ### Special Access Requests
 
@@ -233,8 +229,6 @@ Access should be recorded in a way that we can periodically review
 and ensure we clean up temporary accounts that are no longer needed.
 Initially this will be done by updating the readme of the secrets
 repo.
-
-
 
 #### Jenkins Job Configuration Access
 

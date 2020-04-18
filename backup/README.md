@@ -3,7 +3,6 @@
 A collection of scripts, configuration and information regarding what's
 currently being backed up.
 
-
 ### Backed up infrastructure
 
  - ci.nodejs.org:
@@ -19,7 +18,6 @@ currently being backed up.
    - /home/libuv/www/dist: all artifacts for libuv.org (static, no deletion)
    - /var/log/nginx: all logs for nodejs, iojs and libuv (rotated)
 
-
 ### Folder structure
 
 A list of the backup folder structure to make it easier navigating around.
@@ -31,7 +29,6 @@ A list of the backup folder structure to make it easier navigating around.
 | `archive/old-jenkins.tar.xz` | a full copy of jenkins pre-security-vulnerability |
 | `static/` | backed up content intended for non-rotation |
 | `periodic/` | periodically updated storage managed by rsnapshot |
-
 
 ### Setting it up
 

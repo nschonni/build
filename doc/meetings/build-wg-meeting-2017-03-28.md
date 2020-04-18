@@ -100,7 +100,6 @@ Next meeting: 18 April 2017
   * Rod: good way to start is maintenance on the test workers.
   * Michael to open an issue to discuss the list of areas.
 
-
 ## Questions
 
 ### William Kapke - why not spend the community money?

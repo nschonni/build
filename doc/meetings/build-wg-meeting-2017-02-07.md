@@ -7,7 +7,6 @@
 
 * Next meeting: 14 Feb 2017
 
-
 ## Present
 
 * @joaocgreis João Reis

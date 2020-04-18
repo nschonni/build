@@ -7,7 +7,6 @@
 
 ## Present
 
-
 * Michael Dawson (@mhdawson)
 * Richard Lau (@richardlau)
 * Rod Vagg (@rvagg)
@@ -17,12 +16,9 @@
 
 ## Agenda
 
-
 ## Announcements
 
-
 *Extracted from **build-agenda** labelled issues and pull requests from the **nodejs org** prior to the meeting.
-
 
 * OSX notarization
   * Infra
@@ -37,7 +33,6 @@
       need higher level to renew, not sure if needed to be members of team.  
   * Build changes?
     * Once Rod has the certs he’s going to work on a proposal
-
 
 * Tracking Jenkins changes
   * Discussion, about how to we keep revision history. Pipelines could do that, but they way we
@@ -63,11 +58,8 @@
 
 ## Q&A, Other
 
-
 ## Upcoming Meetings
 
-
 * **Node.js Foundation Calendar**: https://nodejs.org/calendar
-
 
 Click `+GoogleCalendar` at the bottom right to add to your own Google calendar.

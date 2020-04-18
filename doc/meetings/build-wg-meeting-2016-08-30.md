@@ -113,7 +113,6 @@ Extracted from wg-agenda issues and pull requests from build repo:
     * make Jenkins treat any failures for platform X as flaky (yellow)
   * build group (Rod) will make proposal to TSC.
 
-
 * TAP Plugin issues on Jenkins #453
   * we suspect that TAP Plugin is consuming much of the resources on Jenkins.
   * every time this runs it creates an XML file which is later
@@ -133,4 +132,3 @@ Extracted from wg-agenda issues and pull requests from build repo:
 ## Next meeting
 
 September 20th, 8pm UTC
-

@@ -38,7 +38,6 @@
     * In exceptions where that is not possible, open issue and make sure it gets enough visibility
   * Next step is to document process, @refack will write this up.
 
-
 * Request for elevated permissions [#1337](https://github.com/nodejs/build/issues/1337)
   * Jon - Next step is criteria for giving people access.
   * Rod, real problem is that we need to break out levels of access so that we can more
@@ -79,4 +78,3 @@ No questions this time.
 * **Node.js Foundation Calendar**: https://nodejs.org/calendar
 
 Click `+GoogleCalendar` at the bottom right to add to your own Google calendar.
-

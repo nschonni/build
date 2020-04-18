@@ -7,7 +7,6 @@ Previous meeting: https://docs.google.com/document/d/1l3mVB1f-JCG-05V68XIrxWNlgZ
 
 Next meeting: January 10, 2017
 
-
 ## Present
 
 - Johan Bergström
@@ -39,19 +38,15 @@ Next meeting: January 10, 2017
   - file and directory names for downloads #515
     - No change since last meeting; push forward
 
-
   - Draft text for HSTS communication #484
     - Johan will work on finalizing this until next meeting
-
 
   - TAP Plugin issues on Jenkins #453
     - Johan will work on finalizing this until next meeting
 
-
   - rsync endpoint to mirror the releases #55
     - Look at adding ssl to unencrypted.nodejs.org if it needs to be a mirror
     - Try to accelerate development shielding all downloads with cloudflare
-
 
   - Looking for issue good for first contribution #495
 

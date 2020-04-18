@@ -13,7 +13,6 @@ Next meeting: 1 August 2017
 * Kyle Farnung (@kfarnung)
 * João Reis (@joaocgreis)
 
- 
 ## Standup
 * Michael Dawson
   * Backup raspberry pi 1 for release builds. Running and configured with ansible. Next step is to establish tunnel into CI
@@ -31,8 +30,6 @@ Next meeting: 1 August 2017
 * João Reis
   * Created a new Jenkins job to update and reboot Windows machines everyday if needed
   * Added a crontab entry in all SmartOS workers to clean old core dumps
-
-
 
 ## Minutes
 ### Proposed test for regular tweet thanking sponsors [#771](https://github.com/nodejs/build/issues/771)

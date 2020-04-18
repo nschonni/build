@@ -53,7 +53,6 @@ Oct 24, 2017 22:00 UTC
   - Worked on webpack and webpack cli.
   - Keen to help out with Node core automation.
 
-
 ## Minutes
 
 ### suggestion: investigate a commit-queue solution [#705](https://github.com/nodejs/build/issues/705)

@@ -3,7 +3,6 @@ so the scripts install-xxx.sh currently need to be run more than
 once and after some small number of runs (2-3) all of the required
 modules will be installed.
 
-
 ## Increase the size of the filesystems
 
 ```bash
@@ -60,7 +59,6 @@ sudo rm /usr/lib/libiconv.a && sudo ln -s /opt/freeware/bin/libiconv.a /usr/lib
 
 ## Install required packages
 
-
 #### curl, unzip
 
 Download and scp to the machine:
@@ -116,7 +114,6 @@ rpm -ivh git-2.8.1-1.aix6.1.ppc.rpm --force
 
 #### openssl, openssh
 
-
 Download and scp to the machine:
 https://www-01.ibm.com/marketing/iwm/iwm/web/reg/pick.do?source=aixbp&lang=en_US
 
@@ -142,7 +139,6 @@ installp -Y -qaXgd . openssl openssh
 
 #### gettext, java, make
 
-
 ```bash
 LIBPATH=/usr/lib curl --insecure -O https://public.dhe.ibm.com/aix/freeSoftware/aixtoolbox/RPMS/ppc/gettext/gettext-0.19.7-1.aix6.1.ppc.rpm
 rpm -e gettext
@@ -157,7 +153,6 @@ rpm -i make-3.82-1.aix5.3.ppc.rpm
 ```
 
 #### libtool
-
 
 Download and scp to the machine:
 http://www.bullfreeware.com/affichage.php?id=1458#
@@ -185,10 +180,7 @@ LIBPATH=/usr/lib curl https://bootstrap.pypa.io/get-pip.py | python
 ln -s /opt/freeware/bin/pip /usr/bin/pip
 ```
 
-
-
 ## Install ccache
-
 
   The right way to do this is not with CC and CXX that have ccache in them,
   but by making sure that ccache is first in the path, and that following it
@@ -219,7 +211,6 @@ rm -rf tmp
 ```
 
 ## Add ::1 to /etc/hosts
-
 
 ```bash
 echo "::1 localhost" >>/etc/hosts
@@ -271,7 +262,6 @@ gunzip -d gmake-dep.tar.gz
 tar -xf gmake-dep.tar
 ```
 
-
 ## Install python3
 
 ```bash
@@ -310,7 +300,6 @@ inutoc
 installp -aXgd ./ -e /tmp/install.log all
 ```
 4. Find compilers in `/opt/IBM/xl[cC]/16.1.0/bin/`
-
 
 # Final setup steps
 

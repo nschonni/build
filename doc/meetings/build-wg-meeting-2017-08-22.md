@@ -6,12 +6,10 @@ Next meeting: 12 September 2017
 
 Aug 22, 2017 8 PM UTC
 
-
 ### Where
 
 - [Youtube stream, for viewers](https://www.youtube.com/watch?v=WF7oa1heAko)
 - [Previous meeting](https://github.com/nodejs/build/issues/819)
-
 
 ## Present
 * Michael Dawson (@mhdawson)
@@ -19,7 +17,6 @@ Aug 22, 2017 8 PM UTC
 * Gibson Fahnestock (@gibfahn)
 * Rod Vagg (@rvagg)
 * Refael Ackermann (@refack)
-
 
 ## Standup
 
@@ -59,8 +56,6 @@ Extracted from `wg-agenda` [issues](https://github.com/nodejs/build/issues?q=is%
   https://github.com/nodejs/build/pull/804)
 * Migrate job configuration to pipeline files [#838](
   https://github.com/nodejs/build/issues/838)
-
-
 
 ## Minutes
 

@@ -28,7 +28,6 @@ The **os** field contains operating system identifiers as well as `src` for sour
 
 The **arch** field is blank when **os** is `src` or `headers`.
 
-
 ## Pre-processed summary data
 
 A set of pre-processed summary data is also made available in the **[./summaries/](./summaries/)** sub-directory. Each type of summary consists of:
@@ -100,5 +99,3 @@ Plot:
 ## Additional stuff
 
 The source of this file along with the various scripts used to generate the data files and graphs can be found in the [nodejs/build](https://github.com/nodejs/build) GitHub repository in the [setup/www/tools/metrics](https://github.com/nodejs/build/tree/master/setup/www/tools/metrics) directory. Questions, suggestions and pull requests are welcome in that repository.
-
-

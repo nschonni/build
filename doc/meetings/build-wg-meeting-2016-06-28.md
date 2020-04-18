@@ -6,7 +6,6 @@ Meeting video: http://www.youtube.com/watch?v=0yRT8h2WDJw
 
 Previous meetings: https://docs.google.com/document/d/165tby7jyuYo4cXVrwQxUAQAzZMAJVj_UD4vnBmodu_4/edit
 
-
 ## Present
 
 * Joao Reis
@@ -27,7 +26,6 @@ Previous meetings: https://docs.google.com/document/d/165tby7jyuYo4cXVrwQxUAQAzZ
     showing a 200 - 400% improvement
   * Research electron alternative to installer
   * Backport V8 test runner to v4.x
-
 
 ## Minutes
 

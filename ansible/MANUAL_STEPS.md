@@ -25,7 +25,6 @@
 * [Raspberry Pi](#raspberry-pi)
   * [NFS boot](#nfs-boot)
 
-
 ## Adding firewall entries for Jenkins workers
 
 Workers must be added to the firewall config before they will be able
@@ -148,7 +147,6 @@ If there are any missing they should be installed via yum
 
 What you do need to install manually is **ccache**
 
-
 ```bash
 mkdir -p /opt/gcc-6.3 && cd /opt/gcc-6.3
 curl -L https://ci.nodejs.org/downloads/aix/gcc-6.3-aix7.2.ppc.tar.gz | /opt/freeware/bin/tar -xzf -
@@ -197,7 +195,6 @@ inutoc
 installp -aXgd ./ -e /tmp/install.log all
 ```
 4. Find compilers in `/opt/IBM/xl[cC]/16.1.0/bin/`
-
 
 ### Fix "Missing" shared objects
 
@@ -285,7 +282,6 @@ path prefix:
 	$ mv .../opt/freeware/* ./
 	$ tar -cvf ../gcc-6.3-aix7.2.ppc.tar *
 	```
-
 
 Example above was for 6.3.0, but process for 4.8.5 is identical, other than
 the version numbers.

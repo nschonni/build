@@ -11,7 +11,6 @@ GitHub Issue: https://github.com/nodejs/build/issues/1330
 - @ryzokuken
 - @Trott
 
-
 ## Agenda
 
 ### New members

@@ -2,7 +2,6 @@
 
 Apr 18, 2017 4 PM EST - [time in your timezone](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Node.js+Build+WG+Meeting&iso=20170418T20&p1=1440&ah=1)
 
-
 ### Where
 - [Hangouts on Air, for participants]
 - [Youtube stream, for viewers]
@@ -16,7 +15,6 @@ Extracted from `wg-agenda` [issues](https://github.com/nodejs/build/issues?q=is%
 and [pull requests](https://github.com/nodejs/build/pulls?q=is%3Aopen+label%3Awg-agenda+is%3Apr) from this repo.
 
 * Issue name #000
-
 
 All welcome of course, primarily @nodejs/build focused but we're happy to expand.
 

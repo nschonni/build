@@ -22,6 +22,5 @@ onboarding session.
     - [ ] Answer any questions they may have
 - [ ] PR changes to [README.md](./README.md#build-wg-members) to add the member to build-test
 
-
 At first all members are added to nodejs/build-test. Members may be granted further permissions and access as needed
 by the working group, see [GOVERNANCE][./GOVERNANCE.md].

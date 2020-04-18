@@ -30,7 +30,6 @@
 [#2190](https://github.com/nodejs/build/issues/2190)
   * covered under the discussion on #2196.
 
-
 * Platform requirements for Node.js 14 [#2168](https://github.com/nodejs/build/issues/2168)
   * reviewed what has been discussed, general agreement
   * Richard to capture summary of current proposal for requirements for 14.x

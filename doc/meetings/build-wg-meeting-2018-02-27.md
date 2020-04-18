@@ -14,7 +14,6 @@
 * Rich Trott (@trott)
 * Rod Vagg (@rvagg)
 
-
 ### Standup
 
 * gibfahn:

@@ -30,7 +30,6 @@ Extracted from `wg-agenda` [issues](https://github.com/nodejs/build/issues?q=is%
   * working on getting tap jobs from our test runs
   * quite a few other things I missed taking down
 
-
 * Michael Dawson
  * Keeping eye on PPC machines, now stable
   * Adding new AIX machines along with updates to instructions
@@ -39,11 +38,9 @@ Extracted from `wg-agenda` [issues](https://github.com/nodejs/build/issues?q=is%
     we can get nightlies
   * Working on build presentation for Node Interactive EU
 
-
 * Myles Borins
   * PR to get xml reporter for CITGM (needs LGTM)
   * CITGM job to test abi breakages (different versions of node for compile and test)
-
 
 * Hans Kristian Flaatten
   * Not too much, maintenance on Jenkins Monitor (email issue)
@@ -72,7 +69,6 @@ Extracted from `wg-agenda` [issues](https://github.com/nodejs/build/issues?q=is%
 * Collectively reviewing the node.js build presentation.
   Michael has prepared ahead of the event in September. Some good
   feedback that Michael will incorporate.
-
 
 ## Next meeting
 

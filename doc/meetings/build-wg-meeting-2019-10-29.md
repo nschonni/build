@@ -15,7 +15,6 @@
 
 ## Agenda
 
-
 ## Announcements
  
 *Extracted from **build-agenda** labelled issues and pull requests from the **nodejs org** prior to the meeting.
@@ -48,7 +47,6 @@ No items on agenda adhoc coverage of
       ok if we just leave it as 10.x and 8.x not running on latest OSX and only 12.x and later do?)
       * Next step is Sam will open TSC issue
 
-
   * Joyent migration
     * We need to migrate machines at Joyent from one datacenter to another. Work is covered
       so far as:
@@ -58,13 +56,10 @@ No items on agenda adhoc coverage of
 
      * At this point still work to do but looks manageable.
 
-
 ## Q&A, Other
 
 ## Upcoming Meetings
 
-
 * **Node.js Foundation Calendar**: https://nodejs.org/calendar
-
 
 Click `+GoogleCalendar` at the bottom right to add to your own Google calendar.

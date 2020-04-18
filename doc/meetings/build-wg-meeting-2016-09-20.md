@@ -79,7 +79,6 @@ Extracted from wg-agenda issues and pull requests from this repo.
 
   * We might have a hardware donator, meaning we will carry the hosting cost.
 
-
 ## Next Meeting
 
 October 11th, 8pm UTC

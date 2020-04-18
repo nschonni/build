@@ -57,14 +57,11 @@ improve the process as we go.
 
 ### PPC platforms as part of standard release [#205]
 
-
 ### Add FIPS mode build to CI [#264]
-
 
 ## Previous meeting review
 
 Skipped
-
 
 ## Follow-ups
 

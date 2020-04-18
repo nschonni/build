@@ -60,7 +60,6 @@ encountered with these servers. This is not a small amount of trust and
 individuals should be conscious of the impact of their activities and **always
 ask for assistance where there is uncertainty**.
 
-
 ### Infra servers
 
 A small subset of Build WG members have access to infrastructure ("infra")

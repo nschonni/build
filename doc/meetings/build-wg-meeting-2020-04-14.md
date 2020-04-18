@@ -16,13 +16,11 @@
 
 ## Agenda
 
-
 ## Announcements
  
 *Extracted from **build-agenda** labelled issues and pull requests from the **nodejs org** prior to the meeting.
 
 ### nodejs/build
-
 
 * retrospective on download outage [#2264](https://github.com/nodejs/build/issues/2264)
   * Sam, should we be communicating with Azure, GitHub actions etc, to clarify expectations
@@ -52,6 +50,5 @@
 ## Upcoming Meetings
 
 * **Node.js Foundation Calendar**: https://nodejs.org/calendar
-
 
 Click `+GoogleCalendar` at the bottom right to add to your own Google calendar.

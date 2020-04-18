@@ -18,7 +18,6 @@ A guide on maintaining Node.js' Test and Release Jenkins clusters
   * [Fixing machines with Docker](#fixing-machines-with-docker)
   * [IDK what to do](#idk-what-to-do)
 
-
 ## Ansible
 
 All machines in the clusters are managed using Ansible, with the
@@ -86,7 +85,6 @@ a#jenkins-home-link:after {
   margin-left: 250px;
 }
 ```
-
 
 To change the Jenkins security configuration, you must be a member of
 the `nodejs/jenkins-admins` team, and travel to the ["Configure Global

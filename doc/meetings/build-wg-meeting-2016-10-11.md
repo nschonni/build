@@ -9,7 +9,6 @@ Previous meeting: https://docs.google.com/document/d/1mz-gvvFlaZaz1Fdl_fM5oLGtOH
 
 Next meeting: November 1, 2016
 
-
 ## Present
 
 * Johan Bergström (@jbergstroem)

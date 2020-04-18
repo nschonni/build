@@ -14,7 +14,6 @@ Next meeting: 2017-10-03 20:00UTC
 
 Sep 12, 2017 10 PM UTC
 
-
 ### Where
 - [Youtube stream, for viewers](https://www.youtube.com/watch?v=oflJCk6hne0)
 - [Previous meeting](https://github.com/nodejs/build/issues/837)
@@ -26,7 +25,6 @@ Extracted from `wg-agenda` [issues](https://github.com/nodejs/build/issues?q=is%
 - Demo KeyBox at next WG Meeting [#806](https://github.com/nodejs/build/issues/806)
 - ansible: use gcc 4.9 on CentOS 6 [#809](https://github.com/nodejs/build/pull/809)
 - ansible: use gcc 4.9 on Ubuntu 14.04 [#797](https://github.com/nodejs/build/pull/797)
-
 
 ## Standup
 
@@ -52,7 +50,6 @@ Extracted from `wg-agenda` [issues](https://github.com/nodejs/build/issues?q=is%
   - Jenkins maintenance
 
 ## Agenda
-
 
 ### Demo KeyBox [#806](https://github.com/nodejs/build/issues/806)
 
@@ -80,7 +77,6 @@ Extracted from `wg-agenda` [issues](https://github.com/nodejs/build/issues?q=is%
   - Rod: How about on one of the CI machines. Only issue is Jenkins has had many
     security vulnerabilities.
 - Everyone: Think about where to install and comment in the issue.
-
 
 ### ansible: use gcc 4.9 on CentOS 6 [#809](https://github.com/nodejs/build/pull/809)
 
@@ -130,13 +126,11 @@ Extracted from `wg-agenda` [issues](https://github.com/nodejs/build/issues?q=is%
     machine. I'll test it out.
 - Gibson: I'll raise an issue to discuss 32-bit in 9.x.
 
-
 ### ansible: use gcc 4.9 on Ubuntu 14.04 [#797](https://github.com/nodejs/build/pull/797)
 
 - Gibson: This one should be fine, we don't build releases on Ubuntu so it's not an
   issue.
   - All: No issues with this.
-
 
 ### Store resources for Ansible on jenkins ci master [#871](https://github.com/nodejs/build/issues/871)
 

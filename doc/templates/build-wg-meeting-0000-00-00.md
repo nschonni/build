@@ -23,8 +23,6 @@ Next meeting: DD MMM YYYY
 ### Issue name [#000](https://github.com/nodejs/build/issues/000)
 - <!-- Notes -->
 
-
 ## Questions
 
 - <!-- Questions from IRC, the Issue, or ??? -->
-

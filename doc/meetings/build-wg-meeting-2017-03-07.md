@@ -57,5 +57,3 @@
   * look into rewriting jenkins host init script in systemd for
     auto-restarting after OOMs
     * create issue, and mark as good first contribution (Johan)
-
-

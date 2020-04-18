@@ -39,7 +39,6 @@
 * Add Google-Cloud-Build to github marketplace for Node.js org [#298](https://github.com/nodejs/admin/issues/298)
   * Need to clarify if this is for *.dev only or something else
   
-
 * Use Foundation resources to support build [#1154](https://github.com/nodejs/build/issues/1154)
   * Skipped because we ran out of time
 
@@ -54,5 +53,3 @@
 * **Node.js Foundation Calendar**: https://nodejs.org/calendar
 
 Click `+GoogleCalendar` at the bottom right to add to your own Google calendar.
-
-

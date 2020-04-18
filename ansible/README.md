@@ -2,7 +2,6 @@
 
 (in lack of a better title)
 
-
 ## Getting started
 
 1. Follow the [instructions to install the latest version of Ansible][ansible-install].
@@ -12,7 +11,6 @@
    before you use `ansible-playbook`.
 2. Read this document.
 3. For SSH access, see the [SSH guide](../doc/ssh.md).
-
 
 ## Getting things done
 

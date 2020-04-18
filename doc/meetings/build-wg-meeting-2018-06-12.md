@@ -15,7 +15,7 @@
   * Johan Bergström (@jbergstroem)
   * Joyee Cheung (@joyeecheung)
   * Kyle Farnung (@kfarnung)
-  * Matheus Marchini (@mmarchini)	
+  * Matheus Marchini (@mmarchini)
 
 ## Agenda
 

@@ -21,9 +21,9 @@ Supported versions for building Node.js from source.
 
 | Node.js Version | Visual Studio Version               |
 |-----------------|-------------------------------------|
-| v10             | 2017 <sup>[5]</sup>                 |
-| v12             | 2017, 2019 (flag) <sup>[8]</sup>    |
-| v13             | 2017, 2019 <sup>[9]</sup>           |
+| v10             | 2017 <sup>\[5\]</sup>                 |
+| v12             | 2017, 2019 (flag) <sup>\[8\]</sup>    |
+| v13             | 2017, 2019 <sup>\[9\]</sup>           |
 | v14             | 2017, 2019                          |
 
 ## For building Node.js Addons
@@ -33,7 +33,7 @@ Supported versions for building Node.js addons. End-users should have one of the
 | Node.js Version | Visual Studio Version                     |
 |-----------------|-------------------------------------------|
 | v10             | 2015, VCBT2015, 2017                      |
-| v12             | 2015, VCBT2015, 2017, 2019 <sup>[10]</sup> |
+| v12             | 2015, VCBT2015, 2017, 2019 <sup>\[10\]</sup> |
 | v13             | 2015, VCBT2015, 2017, 2019                |
 | v14             | 2015, VCBT2015, 2017, 2019                |
 
@@ -43,7 +43,7 @@ These versions are used to build the official releases.
 
 | Node.js Version | Windows Version | Visual Studio Version |
 |-----------------|-----------------|-----------------------|
-| v10             | 2012 R2         | 2017 <sup>[5]</sup>   |
+| v10             | 2012 R2         | 2017 <sup>\[5\]</sup>   |
 | v12             | 2012 R2         | 2017                  |
 | v13             | 2012 R2         | 2017                  |
 | v14             | 2012 R2         | 2019                  |

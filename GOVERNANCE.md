@@ -119,7 +119,7 @@ to member of the Working Groups see [resources.md][]
 
 ### WG Meetings
 
-The WG meets every three weeks on a Zoom Webinar, schedule is available on the [Node.js Foundation calendar].
+The WG meets every three weeks on a Zoom Webinar, schedule is available on the [Node.js Foundation calendar][].
 A designated moderator approved by the WG runs the meeting. Each meeting should be
 published to YouTube.
 
@@ -155,7 +155,7 @@ These Pull Requests must be:
   * Get at least one approval from another WG member
   * Use the squash merge button workflow on Github
 
-[IRC], specifically `#node-build` is important for communicating with
+[IRC][], specifically `#node-build` is important for communicating with
 other Node.js project members, and how we receive many initial signals
 of downtime. IRC logs are maintained at http://logs.libuv.org/node-build
 
@@ -327,7 +327,7 @@ Note that changes to WG membership require unanimous consensus.  See
 
 ### Moderation Policy
 
-The [Node.js Moderation Policy] applies to this WG.
+The [Node.js Moderation Policy][] applies to this WG.
 
 ### Code of Conduct
 

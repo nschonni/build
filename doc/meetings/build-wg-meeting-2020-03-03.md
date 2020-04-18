@@ -38,7 +38,7 @@
 [#1695](https://github.com/nodejs/build/issues/1695)
    * 95% there, have been added to all jobs except libuv
    * may need to get PR cmake in ansible for the macs.
-   * Rod has worked on Release machine and quite lot to get it working, need full xcode the only   
+   * Rod has worked on Release machine and quite lot to get it working, need full xcode the only  
   way you can do that is with GUI. Have added manual steps to the doc and need space (takes 
   7+9G to get it setup)  Current Mac stadium machines are 20G so that would be hard.
   Have first notarised build on CI - Yay!.  Lets get this merged into master, and enable 10.15

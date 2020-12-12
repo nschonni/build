@@ -4,11 +4,12 @@ jobs:
   Python:
     runs-on: ubuntu-latest
     strategy:
-      max-parallel: 2
       matrix:
         python-version: [2.7, 3.7]
     steps:
     - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v1
       with:
@@ -22,3 +23,9 @@ jobs:
         pip install flake8
         flake8 --version
         flake8 .
+    - name: Lint Code Base
+      uses: github/super-linter@v3
+      env:
+        VALIDATE_ALL_CODEBASE: false
+        DEFAULT_BRANCH: master
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

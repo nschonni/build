@@ -41,13 +41,13 @@ function onData (err, computers) {
   computers.computer.forEach(function (c) {
     if (!c.offline && !c.temporarilyOffline) { return }
 
-    let dsm = c.monitorData['hudson.node_monitors.DiskSpaceMonitor']
+    const dsm = c.monitorData['hudson.node_monitors.DiskSpaceMonitor']
 
-    let disk = dsm && dsm.size && rnd(dsm.size / 1014 / 1024 / 1024)
+    const disk = dsm && dsm.size && rnd(dsm.size / 1014 / 1024 / 1024)
 
-    let tsm = c.monitorData['hudson.node_monitors.TemporarySpaceMonitor']
+    const tsm = c.monitorData['hudson.node_monitors.TemporarySpaceMonitor']
 
-    let temp = tsm && tsm.size && rnd(tsm.size / 1024 / 1024 / 1024)
+    const temp = tsm && tsm.size && rnd(tsm.size / 1024 / 1024 / 1024)
 
     log('title', c.displayName)
     log('plain', `\t               Idle: ${c.idle}`)

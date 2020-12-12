@@ -58,7 +58,7 @@ async function checkArgs () {
 
 // equivalent to `find -maxdepth 2`
 async function lsDepth2 (dir, isStaging) {
-  let assets = []
+  const assets = []
 
   let subdirs
   try {
@@ -88,7 +88,7 @@ async function lsDepth2 (dir, isStaging) {
         return files.includes(`${f}.done`)
       })
     }
-    let stats = await Promise.all(files.map((a) => statPlus(path.join(subdir, a))))
+    const stats = await Promise.all(files.map((a) => statPlus(path.join(subdir, a))))
     stats.forEach((s) => {
       assets.push(`${path.relative(dir, s.path)}${s.stat.isDirectory() ? '/' : ''}`)
     })
@@ -106,7 +106,7 @@ async function loadExpectedAssets (version, line) {
   }
   try {
     const templateFile = path.join(__dirname, 'expected_assets', line)
-    let files = await fs.readFile(templateFile, 'utf8')
+    const files = await fs.readFile(templateFile, 'utf8')
     return files.replace(/{VERSION}/g, version).split(/\n/g).filter(Boolean)
   } catch (e) { }
   return null
@@ -117,7 +117,7 @@ function intersection (a1, a2) {
 }
 
 function union (a1, a2) {
-  let u = [].concat(a1)
+  const u = [].concat(a1)
   a2.forEach((e) => {
     if (!a1.includes(e)) {
       u.push(e)
@@ -166,9 +166,9 @@ async function execute () {
   // generate comparison lists
   const stagingDistIntersection = intersection(stagingAssets, distAssets)
   const stagingDistUnion = union(stagingAssets, distAssets)
-  let notInActual = expectedAssets.filter((a) => !stagingDistUnion.includes(a))
-  let stagingNotInExpected = stagingAssets.filter((a) => !expectedAssets.includes(a))
-  let distNotInExpected = distAssets.filter((a) => !expectedAssets.includes(a))
+  const notInActual = expectedAssets.filter((a) => !stagingDistUnion.includes(a))
+  const stagingNotInExpected = stagingAssets.filter((a) => !expectedAssets.includes(a))
+  const distNotInExpected = distAssets.filter((a) => !expectedAssets.includes(a))
 
   console.log(`... Expecting a total of ${expectedAssets.length} assets for ${line}`)
   console.log(`... ${stagingAssets.length} assets waiting in staging`)
@@ -226,14 +226,14 @@ function test () {
     if (!assets) {
       assets = await loadExpectedAssets(version)
     }
-    for (let asset of assets) {
-      let absoluteAsset = path.join(dir, asset)
+    for (const asset of assets) {
+      const absoluteAsset = path.join(dir, asset)
       if (asset.endsWith('/')) {
         await fs.mkdir(absoluteAsset, { recursive: true })
       } else {
         await fs.writeFile(absoluteAsset, asset, 'utf8')
       }
-      let dashPos = isStaging && asset.indexOf('/')
+      const dashPos = isStaging && asset.indexOf('/')
       if (isStaging && (dashPos === -1 || dashPos === asset.length - 1)) {
         // in staging, all files and directories that are ready have a
         // duplicate empty file with .done in the name
@@ -265,7 +265,7 @@ function test () {
   // execute check_assets.js with the given staging and dist dirs, collect output
   async function executeMe (stagingDir, distDir) {
     return new Promise((resolve, reject) => {
-      const args = [ '--no-warnings', __filename, stagingDir, distDir ]
+      const args = ['--no-warnings', __filename, stagingDir, distDir]
       childProcess.execFile(process.execPath, args, (err, stdout, stderr) => {
         if (err) {
           return reject(err)
@@ -594,7 +594,7 @@ function test () {
     } else if (passes === tests.length) {
       console.error('\n\u001b[32mAll tests have passed!\u001b[39m')
     } else {
-      console.error(`\n\u001b[31mNot all tests seem to have run, something's wrong\u001b[39m`)
+      console.error('\n\u001b[31mNot all tests seem to have run, something\'s wrong\u001b[39m')
     }
   })
 }

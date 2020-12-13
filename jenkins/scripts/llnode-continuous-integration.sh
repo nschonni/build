@@ -1,9 +1,8 @@
 #!/bin/bash -ex
 
 [ -z "$NODE_VERSION" ] &&
-[ -z "$LLDB_VERSION" ] &&
-
-rm -rf llnode npm
+	[ -z "$LLDB_VERSION" ] &&
+	rm -rf llnode npm
 
 # Download node tarball.
 bash -$- "$(dirname $0)"/common/getNode.sh ${NODE_VERSION:? Undefined.}

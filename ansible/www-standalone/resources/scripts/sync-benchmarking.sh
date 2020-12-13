@@ -8,15 +8,15 @@ cmd="
 "
 
 if [ -a "$pidfile" -a -r "$pidfile" ]; then
-  read pid < "$pidfile"
-  if [ -n "${pid:-}" ]; then
-    if $(kill -0 "${pid:-}" 2> /dev/null); then
-      exit 0 # already running
-    # else stale pid
-    fi
-  fi
+	read pid <"$pidfile"
+	if [ -n "${pid:-}" ]; then
+		if $(kill -0 "${pid:-}" 2>/dev/null); then
+			exit 0 # already running
+		# else stale pid
+		fi
+	fi
 fi
 
-echo $$ > $pidfile
+echo $$ >$pidfile
 bash -c "$cmd"
 rm $pidfile

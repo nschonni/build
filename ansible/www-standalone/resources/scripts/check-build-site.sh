@@ -3,8 +3,8 @@
 site=$1
 
 if [ "X$site" != "Xiojs" ] && [ "X$site" != "Xnodejs" ]; then
-  echo "Usage: check-build-site.sh < iojs | nodejs >"
-  exit 1
+	echo "Usage: check-build-site.sh < iojs | nodejs >"
+	exit 1
 fi
 
 indexjson=/home/dist/${site}/release/index.json

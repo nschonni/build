@@ -5,12 +5,12 @@ outfile=/tmp/dld.txt
 rm -f $outfile
 
 for i in $(ls -r /var/log/nginx/iojs.org-access.log* | tail -3); do
- cat=cat
- if [[ "$i" =~ \.gz$ ]]; then
-    cat=zcat
- fi
- #echo "processing $i..."
- $cat $i | awk '{ print $4, $10, $7 }'  | grep '\\.(pkg\|xz\|gz\|msi\|exe)$' | grep -E ' [0-9]{4,} ' | sed -r 's/^\[([^:]+)[^ ]+/\1/g' | sed 's/ \/.*\/iojs-/ /g' >> $outfile
+	cat=cat
+	if [[ "$i" =~ \.gz$ ]]; then
+		cat=zcat
+	fi
+	#echo "processing $i..."
+	$cat $i | awk '{ print $4, $10, $7 }' | grep '\\.(pkg\|xz\|gz\|msi\|exe)$' | grep -E ' [0-9]{4,} ' | sed -r 's/^\[([^:]+)[^ ]+/\1/g' | sed 's/ \/.*\/iojs-/ /g' >>$outfile
 done
 
 #echo "wrote to $outfile, $(wc -l $outfile) lines"

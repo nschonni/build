@@ -9,8 +9,10 @@ rm -rf "$WORKSPACE"/node-*
 # Download a node tarball from nodejs.org
 NODE_VERSION=v10
 DOWNLOAD_DIR="https://nodejs.org/download/release/"
-LINK=`curl $DOWNLOAD_DIR | grep $NODE_VERSION | sort -t. -k 1,1n -k 2,2n -k 3,3n | tail -1 | cut -d\" -f 2 | tr -d /`
-OS=linux; ARCH=x64; EXT=tar.gz
+LINK=$(curl $DOWNLOAD_DIR | grep $NODE_VERSION | sort -t. -k 1,1n -k 2,2n -k 3,3n | tail -1 | cut -d\" -f 2 | tr -d /)
+OS=linux
+ARCH=x64
+EXT=tar.gz
 
 curl -O "$DOWNLOAD_DIR$LINK/node-$LINK-$OS-$ARCH.$EXT"
 gzip -cd node-$LINK-$OS-$ARCH.$EXT | tar xf -
@@ -27,7 +29,7 @@ git config --replace-all user.email ci@iojs.org
 git reset --hard origin/master
 
 # Update README.md with disclaimer for node-v8 repository
-curl https://raw.githubusercontent.com/nodejs/node-v8/readme/README.md > README.md
+curl https://raw.githubusercontent.com/nodejs/node-v8/readme/README.md >README.md
 git add README.md
 git commit -m"doc: update README for node-v8 repository"
 
@@ -39,7 +41,7 @@ git cherry-pick --abort || true
 
 # Cherry-pick the floating V8 patches Node maintains on master
 # Canary-base is the last good version of canary, and is manually updated with any V8 patches or backports
-git cherry-pick `git log origin/canary-base -1 --format=format:%H --grep "src: update NODE_MODULE_VERSION"`...origin/canary-base
+git cherry-pick $(git log origin/canary-base -1 --format=format:%H --grep "src: update NODE_MODULE_VERSION")...origin/canary-base
 
 # Verify that Node can be compiled and executed
 python ./configure
@@ -48,5 +50,5 @@ out/Release/node test/parallel/test-process-versions.js
 
 # Force-push to the canary branch as the nodejs-ci user if PUSH_TO_GITHUB set.
 if [ "$PUSH_TO_GITHUB" = true ]; then
-  ssh-agent sh -c "ssh-add $NODEJS_CI_SSH_KEY && git push --force git@github.com:nodejs/node-v8.git HEAD:canary"
+	ssh-agent sh -c "ssh-add $NODEJS_CI_SSH_KEY && git push --force git@github.com:nodejs/node-v8.git HEAD:canary"
 fi

@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 if [ ! -f /root/.jenkins_credentials ]; then
-  echo "Add credentials (user:token) to /root/.jenkins_credentials"
-  exit 1
+	echo "Add credentials (user:token) to /root/.jenkins_credentials"
+	exit 1
 fi
 
 if [ "x" == "x$1" ]; then
-  echo "Pass URL to jenkins instance as first argument"
-  exit 1
+	echo "Pass URL to jenkins instance as first argument"
+	exit 1
 fi
 
 HOST=$1

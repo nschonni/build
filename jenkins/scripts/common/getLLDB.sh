@@ -9,13 +9,16 @@ os="$(uname | tr '[:upper:]' '[:lower:]')"
 arch=$(uname -m)
 
 case $os in
-  linux) echo "$os found. Assuming Ubuntu 16.04...";;
-  darwin) exit 0;;
-  *) echo "$os CI is not supported yet"; exit 1;;
+linux) echo "$os found. Assuming Ubuntu 16.04..." ;;
+darwin) exit 0 ;;
+*)
+	echo "$os CI is not supported yet"
+	exit 1
+	;;
 esac
 
 case $arch in
-  x86_64) arch=amd64;;
+x86_64) arch=amd64 ;;
 esac
 
 files=$(curl --compressed -L -s "$DOWNLOAD_DIR" | grep "^<a href=" | cut -d \" -f 2)

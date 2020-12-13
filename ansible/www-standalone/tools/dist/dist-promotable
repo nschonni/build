@@ -5,8 +5,8 @@ set -e
 site=$1
 
 if [ "X$site" != "Xiojs" ] && [ "X$site" != "Xnodejs" ]; then
-  echo "Usage: dist-promotable < iojs | nodejs >"
-  exit 1
+	echo "Usage: dist-promotable < iojs | nodejs >"
+	exit 1
 fi
 
 (cd /home/staging/${site}/release/ && nodejs-ls-types -d *)

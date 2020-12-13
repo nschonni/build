@@ -8,6 +8,6 @@ awk '\
       } \
       else print $0; \
     else print $0} \
- ' /etc/security/login.cfg > /etc/security/login.cfg.new
+ ' /etc/security/login.cfg >/etc/security/login.cfg.new
 rm /etc/security/login.cfg
 mv /etc/security/login.cfg.new /etc/security/login.cfg

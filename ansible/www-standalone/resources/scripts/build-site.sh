@@ -5,27 +5,27 @@ set -e
 site=$1
 
 if [ "X$site" != "Xiojs" ] && [ "X$site" != "Xnodejs" ]; then
-  echo "Usage: build-site.sh < iojs | nodejs >"
-  exit 1
+	echo "Usage: build-site.sh < iojs | nodejs >"
+	exit 1
 fi
 
-pidof -s -o '%PPID' -x $(basename $0) > /dev/null 2>&1 && \
-  echo "$(basename $0) already running" && \
-  exit 1
+pidof -s -o '%PPID' -x $(basename $0) >/dev/null 2>&1 && \
+echo "$(basename $0) already running" && \
+exit 1
 
 clonedir=/home/www/github/${site}
 
 if [ ! -d "${clonedir}" ]; then
-  repo="${site}.org"
-  git clone https://github.com/nodejs/${repo}.git $clonedir
+	repo="${site}.org"
+	git clone https://github.com/nodejs/${repo}.git $clonedir
 fi
 
 if [ "$site" == "nodejs" ]; then
-  build_cmd="npm run deploy"
-  rsync_from="build/"
+	build_cmd="npm run deploy"
+	rsync_from="build/"
 else
-  build_cmd="node_modules/.bin/gulp build"
-  rsync_from="public/"
+	build_cmd="node_modules/.bin/gulp build"
+	rsync_from="public/"
 fi
 
 cd $clonedir
@@ -39,11 +39,11 @@ nodegid=$(grep ^nodejs: /etc/passwd | awk -F: '{print $4}')
 
 docker pull node:latest
 docker run \
-  --rm \
-  -v ${clonedir}:/website/ \
-  -v /home/nodejs/.npm:/npm/ \
-  node:latest \
-  bash -c " \
+--rm \
+-v ${clonedir}:/website/ \
+-v /home/nodejs/.npm:/npm/ \
+node:latest \
+bash -c " \
     apt-get update && apt-get install -y rsync && \
     addgroup nodejs --gid ${nodeuid} && \
     adduser nodejs --uid ${nodeuid} --gid ${nodegid} --gecos nodejs --disabled-password && \

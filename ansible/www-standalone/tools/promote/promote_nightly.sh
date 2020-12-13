@@ -7,8 +7,8 @@ site=$1
 __dirname="$(CDPATH= cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 if [ "X$site" != "Xiojs" ] && [ "X$site" != "Xnodejs" ]; then
-  echo "Usage: promote_nightly.sh < iojs | nodejs >"
-  exit 1
+	echo "Usage: promote_nightly.sh < iojs | nodejs >"
+	exit 1
 fi
 
 . ${__dirname}/settings

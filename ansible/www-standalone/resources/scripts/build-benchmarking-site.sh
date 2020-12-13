@@ -5,8 +5,8 @@ rsync_from=www/
 clonedir=/home/www/github/${site}
 
 if [ ! -d "${clonedir}" ]; then
-  repo="${site}"
-  git clone https://github.com/nodejs/${site}.git $clonedir
+	repo="${site}"
+	git clone https://github.com/nodejs/${site}.git $clonedir
 fi
 
 cd $clonedir

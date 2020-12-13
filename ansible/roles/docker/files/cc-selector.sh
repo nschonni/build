@@ -16,38 +16,38 @@ flags_armv6="-march=armv6zk"
 flags_armv7="-march=armv7-a"
 
 function run {
-  local label="$1"
+	local label="$1"
 
-  export arm_type=$(echo $label | sed -E 's/^cross-compiler-ubuntu1[68]04-(armv[67])-gcc-.*$/\1/')
-  export gcc_version=$(echo $label | sed -E 's/^cross-compiler-ubuntu1[68]04-armv[67]-gcc-(4\.9\.4|6|8)/\1/')
-  export git_branch="cc-${arm_type}"
+	export arm_type=$(echo $label | sed -E 's/^cross-compiler-ubuntu1[68]04-(armv[67])-gcc-.*$/\1/')
+	export gcc_version=$(echo $label | sed -E 's/^cross-compiler-ubuntu1[68]04-armv[67]-gcc-(4\.9\.4|6|8)/\1/')
+	export git_branch="cc-${arm_type}"
 
-  if [[ ! "$arm_type" =~ ^armv[67]$ ]]; then
-    echo "Could not determine ARM type from '$label'"
-    exit 1
-  fi
-  if [[ ! "$gcc_version" =~ ^(4\.9\.4|6|8)$ ]]; then
-    echo "Could not determine ARM type from '$label'"
-    exit 1
-  fi
+	if [[ ! "$arm_type" =~ ^armv[67]$ ]]; then
+		echo "Could not determine ARM type from '$label'"
+		exit 1
+	fi
+	if [[ ! "$gcc_version" =~ ^(4\.9\.4|6|8)$ ]]; then
+		echo "Could not determine ARM type from '$label'"
+		exit 1
+	fi
 
-  gcc_version_safe="$(echo $gcc_version | sed -E 's/\./_/g')"
-  gcc_host_version="$(echo $gcc_version | sed -E 's/\.4//g')" # 4.9.4 -> 4.9
+	gcc_version_safe="$(echo $gcc_version | sed -E 's/\./_/g')"
+	gcc_host_version="$(echo $gcc_version | sed -E 's/\.4//g')" # 4.9.4 -> 4.9
 
-  base_varname="base_${gcc_version_safe}"
-  flags_varname="flags_${arm_type}"
+	base_varname="base_${gcc_version_safe}"
+	flags_varname="flags_${arm_type}"
 
-  echo "ARM variant:           $arm_type"
-  echo "GCC version:           $gcc_version"
-  echo "Using compiler at:     ${!base_varname}gcc"
-  echo "Using commpiler flags: ${!flags_varname}"
+	echo "ARM variant:           $arm_type"
+	echo "GCC version:           $gcc_version"
+	echo "Using compiler at:     ${!base_varname}gcc"
+	echo "Using commpiler flags: ${!flags_varname}"
 
-  export ARCH="${arm_type}l"
-  export DESTCPU=arm
-  export CC_host="ccache gcc-${gcc_host_version} -m32"
-  export CXX_host="ccache g++-${gcc_host_version} -m32"
-  export CC="ccache ${!base_varname}gcc ${!flags_varname}"
-  export CXX="ccache ${!base_varname}g++ ${!flags_varname}"
+	export ARCH="${arm_type}l"
+	export DESTCPU=arm
+	export CC_host="ccache gcc-${gcc_host_version} -m32"
+	export CXX_host="ccache g++-${gcc_host_version} -m32"
+	export CC="ccache ${!base_varname}gcc ${!flags_varname}"
+	export CXX="ccache ${!base_varname}g++ ${!flags_varname}"
 }
 
 run $1

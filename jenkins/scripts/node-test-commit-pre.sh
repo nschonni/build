@@ -28,21 +28,21 @@ git rev-parse HEAD
 git rev-parse $REBASE_ONTO
 
 if [ -n "${REBASE_ONTO}" ]; then
-  git rebase --committer-date-is-author-date $REBASE_ONTO
+	git rebase --committer-date-is-author-date $REBASE_ONTO
 fi
 
 if [ -n "${POST_REBASE_SHA1_CHECK}" ]; then
-  check_sha1=${POST_REBASE_SHA1_CHECK}
-  head_sha1=$(git rev-parse HEAD)
-  if [ "$head_sha1" != "$check_sha1" ]; then
-    exit 1
-  fi
+	check_sha1=${POST_REBASE_SHA1_CHECK}
+	head_sha1=$(git rev-parse HEAD)
+	if [ "$head_sha1" != "$check_sha1" ]; then
+		exit 1
+	fi
 fi
 
 # Run the local copy, if we have one, or fetch the latest from GitHub.
 LOCAL_SCRIPT="${WORKSPACE}/build/jenkins/scripts/node-test-commit-diagnostics.sh"
 if [ -e "${LOCAL_SCRIPT}" ]; then
-  bash -ex "${LOCAL_SCRIPT}" before
+	bash -ex "${LOCAL_SCRIPT}" before
 else
-  curl https://raw.githubusercontent.com/nodejs/build/master/jenkins/scripts/node-test-commit-diagnostics.sh | bash -ex -s before
+	curl https://raw.githubusercontent.com/nodejs/build/master/jenkins/scripts/node-test-commit-diagnostics.sh | bash -ex -s before
 fi
